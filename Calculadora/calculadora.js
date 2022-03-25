@@ -12,14 +12,15 @@ function back () {
     let resultado = document.getElementById('res').innerHTML;
     document.getElementById('res').innerHTML = resultado.substring(0, resultado.length -1);
 }
+//Botao Igual resultado
 function igual()
 { 
     let resultado = document.getElementById('res').innerHTML;
-        if (resultado)
+          if (resultado)
          {
         document.getElementById('res').innerHTML = eval(resultado)
-        } else {
+        }
+         else {
             document.getElementById('res').innerHTML = "Informe o valor"
         }
-
 }
