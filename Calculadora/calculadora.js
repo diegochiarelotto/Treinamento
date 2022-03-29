@@ -19,7 +19,7 @@ function igual()
     let resfinal = eval(resultado)
     
     if (resfinal==Infinity) {
-        document.getElementById('res').innerHTML = "Erro!"
+        document.getElementById('res').innerHTML = "0"
     }else {
         document.getElementById('res').innerHTML = eval(resfinal)
     }
