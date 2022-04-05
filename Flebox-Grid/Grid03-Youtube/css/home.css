@@ -60,46 +60,38 @@ img {
     padding: 10px;
 }
                         /*******Grid**************/
-.grid {
+.txt_grid2 {
     font-family: var(--fonte1);
     text-align: center;
     color: var(--Escrita);
-    font-size: 28px;
+    font-size: 38px;
     padding: 100px;
 }
-.grid1 {
+.grid2 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 800px;
-    padding: 10px;
-    margin: 0 auto;
+    grid-template-columns: 1fr 200px;
     grid-gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
 }
-.grid1 div {
-    background-color: white;
-    border-radius: 10px;
-    padding: 40px;
+iframe {
+    margin: 100px auto;
+    padding-top: 40px;
+    width: 560px;
+    height:315px; 
 }
-.grid1 div:nth-child(n+4) {
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   grid-gap: 10px;
-   align-items: center;
-
-
-}
-.grid1 div p {
+.video h2 {
+    color: var(--Escrita);
     text-align: center;
-    ;
 }
-.grid1 div.anuncio  {
-    grid-row: 2 / 5;
-    display: inline-table;
-    align-items: center;
-    height: 400px;
-    width: auto;
-    padding-top: 200px;
 
+.sidebar div {
+    margin-bottom: 10px;
+    
+}
+.sidebar div p {
+    color: white;
+    text-align: center;
 }
 footer {
     font-family: var(--fonte1);
@@ -109,15 +101,3 @@ footer {
     padding: 30px;
 }
 
-@media (max-width: 600px) {
-    .grid1 {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .grid1 div:nth-child(n+4){
-        display: block;
-    }
-    .grid1 div.anuncio{
-    grid-column: auto;
-    grid-row: auto;
-    }
-}

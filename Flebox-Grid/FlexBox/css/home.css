@@ -22,9 +22,10 @@
 }
 body {
     background-color: var(--Fundo);
+    padding: 30px;
     height: 100%;
     width: 100%;
-    margin-bottom: 100px;
+    
 }
 img {
     max-width: 100%;
@@ -59,48 +60,42 @@ img {
     font-weight: bold;
     padding: 10px;
 }
-                        /*******Grid**************/
-.grid {
+.flexbox {
+    padding: 38px;
+
+}
+.flexbox h1{
     font-family: var(--fonte1);
-    text-align: center;
     color: var(--Escrita);
-    font-size: 28px;
-    padding: 100px;
-}
-.grid1 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 800px;
-    padding: 10px;
-    margin: 0 auto;
-    grid-gap: 20px;
-}
-.grid1 div {
-    background-color: white;
-    border-radius: 10px;
-    padding: 40px;
-}
-.grid1 div:nth-child(n+4) {
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   grid-gap: 10px;
-   align-items: center;
-
-
-}
-.grid1 div p {
     text-align: center;
-    ;
+    font-size: 28px;
 }
-.grid1 div.anuncio  {
-    grid-row: 2 / 5;
-    display: inline-table;
-    align-items: center;
-    height: 400px;
-    width: auto;
-    padding-top: 200px;
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+    
+    
+}
+.flex  div {
+    background-color: white;
+    flex: 1 1 200px;
+    border: none;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 12px;
+}
+.flex div p{
+    font-family: var(--Escrita);
+    border: none;
+    color: var(--Escrita);
+    text-align: center;
+    color: black;
+    padding: 10px;
+    
+}
 
-}
 footer {
     font-family: var(--fonte1);
     color: var(--Escrita);
@@ -109,15 +104,3 @@ footer {
     padding: 30px;
 }
 
-@media (max-width: 600px) {
-    .grid1 {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .grid1 div:nth-child(n+4){
-        display: block;
-    }
-    .grid1 div.anuncio{
-    grid-column: auto;
-    grid-row: auto;
-    }
-}
